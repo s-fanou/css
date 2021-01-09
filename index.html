@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <style>
@@ -17,11 +17,24 @@
 
 <body>
 
-    <label class="font-color-navy"><strong>Label text here</strong></label>
+    <label class="font-color-navy"><strong>This is text in the Label</strong></label>
+
     <p style="color:blueviolet">
-        This is some text in the paragraph
-        <input type="text" />
+        This is some text in the Paragraph. The paragraph is assigned 3 different color styles in this order:
+    <ul>
+        <li>1. from the styles.css file => color Navy.</li>
+        <li>2. in header style tag => color Brown.</li>
+        <li>3. In-line => color blueviolet.</li>
+    </ul>
+
+    The final color is blueviolet therefore the inline wins (takes precedence). Notice that the closing tag of the paragraph is below this
+    text yet the color here is default black. The UL is also within the paragraph yet its color is also default black. Which means that
+    the UL interupts the styling of the paragraph and from then on the default black applies. Also notice that the UL does not take 
+    the style from the paragraph even though it is within it. 
+
     </p>
+
+    <input type="text" />
 
 
 </body>
