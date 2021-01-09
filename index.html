@@ -17,19 +17,19 @@
 
 <body>
 
-    <label class="font-color-navy"><strong>This is text in the Label</strong></label>
+    <label><strong>Different styles from different SOURCES assigned to the same element</strong></label>
 
-    <p style="color:blueviolet">
+    <p style="color:red">
         This is some text in the Paragraph. The paragraph is assigned 3 different color styles in this order:
     <ul>
-        <li>1. from the styles.css file => color Navy.</li>
+        <li>1. from the styles.css file => color Blue.</li>
         <li>2. in header style tag (which is after the link to style.css) => color Brown.</li>
-        <li>3. In-line => color blueviolet.</li>
+        <li>3. In-line => color Red.</li>
     </ul>
 
-    The final color is blueviolet therefore the inline wins (takes precedence). Notice that the closing tag of the paragraph is below this
+    The final color is RED therefore the inline wins (takes precedence). Notice that the closing tag of the paragraph is below this
     text yet the color here is default black. The UL is also within the paragraph yet its color is also default black. Which means that
-    the UL interupts the styling of the paragraph and from then on the default black applies. Also notice that the UL does not take 
+    the UL interrupts the styling of the paragraph and from then on the default black applies. Also notice that the UL does not take 
     the style from the paragraph even though it is within it. 
 
     </p>
