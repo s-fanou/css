@@ -18,26 +18,14 @@
 <body>
 
     <label><strong>Different styles types e.g. class, id, inline and from different sources, e.g. css file,
-        style tag, inline assigned to the same element. Which one has precedence?
+            style tag in Head, assigned to the same element. Which one has precedence?
         </strong></label>
 
     <p id="one" class="dot-one" style="color:red">
-        This is some text in the Paragraph. The paragraph is assigned 3 different color styles in this order:
-    <ul>
-        <li>1. from the styles.css file => color Blue.</li>
-        <li>2. in header style tag (which is after the link to style.css) => color Brown.</li>
-        <li>3. In-line => color Red.</li>
-    </ul>
-
-    The final color is RED therefore the inline wins (takes precedence). OPEN THIS FILE IN THE CHROME DEV TOOLS. IT SHOWS
-    THE
-    PRECEDENCE FROM BOTTOM TO TOP. Notice that the closing tag of the paragraph is
-    below this
-    text yet the color here is default black. The UL is also within the paragraph yet its color is also default black.
-    Which means that
-    the UL interrupts the styling of the paragraph and from then on the default black applies. Also notice that the UL
-    does not take
-    the style from the paragraph even though it is within it.
+        This is some text in the Paragraph. The paragraph is assigned different color styles from both different sources
+        e.g. css file and style tag and diferent types, e.g. class or ID types. The final color is RED therefore the
+        inline wins (takes precedence) from all of them. OPEN THIS FILE IN THE CHROME DEV TOOLS. IT SHOWS
+        THE PRECEDENCE OF ALL AND IN ORDER FROM BOTTOM TO TOP. Bottom has less precedence, top has more.
 
     </p>
 
