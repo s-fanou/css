@@ -8,25 +8,30 @@
 
     <style>
         p {
-            color: brown
+            color: brown;
+            border-style: solid;
         }
     </style>
 
-    <title>Sot Test CSS 3</title>
+    <title>Sot Test CSS 4</title>
 </head>
 
 <body>
 
-    <label><strong>Different styles types e.g. class, id, inline and from different sources, e.g. css file,
-            style tag in Head, assigned to the same element. Which one has precedence?
+    <label><strong>Different styles from different sources cascade to form a virtual style sheet that applies to the
+            same element.
         </strong></label>
 
-    <p id="one" class="dot-one" style="color:red">
-        This is some text in the Paragraph. The paragraph is assigned different color styles from both different sources
-        e.g. css file and style tag and diferent types, e.g. class or ID types. The final color is RED therefore the
-        inline wins (takes precedence) from all of them. OPEN THIS FILE IN THE CHROME DEV TOOLS. IT SHOWS
-        THE PRECEDENCE OF ALL AND IN ORDER FROM BOTTOM TO TOP. Bottom has less precedence, top has more.
+    <p id="one" class="dot-one">
+        This is some text in the Paragraph. The paragraph is assigned different styles from different sources.
+        This paragraph gets text color green from ID #one in styles.css, border-style from style tags, and background 
+        color from styles.css.
+        The different styles from the sources combine to form a virtual style sheet for this element.
 
+    </p>
+
+    <p>OPEN THIS FILE IN THE CHROME DEV TOOLS. IT SHOWS
+        THE PRECEDENCE OF ALL AND IN ORDER FROM BOTTOM TO TOP. Bottom has less precedence, top has more.
     </p>
 
     <input type="text" />
