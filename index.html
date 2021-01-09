@@ -6,11 +6,6 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <style>
-        p {
-            color: brown
-        }
-    </style>
 
     <title>Sot Test CSS</title>
 </head>
@@ -21,15 +16,18 @@
             which one has precedence?
         </strong></label>
 
-    <p id="one" class="dot-one" style="color:red">
-        This is some text in the Paragraph. The paragraph is assigned 3 different color styles in this order:
+    <p id="one" class="dot-one">
+        This is some text in the Paragraph. The paragraph is assigned 3 different color styles in the same source
+        the styles.css file but of different types:
     <ul>
-        <li>1. from the styles.css file => color Blue.</li>
-        <li>2. in header style tag (which is after the link to style.css) => color Brown.</li>
-        <li>3. In-line => color Red.</li>
+        <li>1. The 'p' paragraph selector => color Blue.</li>
+        <li>2. class dot-one => color orange.</li>
+        <li>3. ID one => color Green.</li>
     </ul>
 
-    The final color is RED therefore the inline wins (takes precedence). Notice that the closing tag of the paragraph is
+    The final color is GREEN therefore the ID wins (takes precedence). OPEN THIS FILE IN THE CHROME DEV TOOLS. IT SHOWS
+    THE
+    PRECEDENCE FROM BOTTOM TO TOP. Notice that the closing tag of the paragraph is
     below this
     text yet the color here is default black. The UL is also within the paragraph yet its color is also default black.
     Which means that
