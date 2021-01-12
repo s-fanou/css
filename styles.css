@@ -1,5 +1,4 @@
-p {
-    color:blue;
+/* Selects all <p> elements inside <div> elements */
+div p {
+  background-color: yellow;
 }
-
-.font-color-navy { color:navy}
