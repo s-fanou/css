@@ -1,4 +1,3 @@
-/* Selects all <p> elements inside <div> elements */
-div p {
+div > p {
   background-color: yellow;
 }
