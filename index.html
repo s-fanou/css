@@ -5,25 +5,25 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <style>
-        p {
-            color: brown
-        }
-    </style>
 
     <title>Sot Test CSS</title>
 </head>
 
 <body>
 
-    <label class="font-color-navy"><strong>Label text here</strong></label>
+    <h2>Descendant Selector</h2>
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
 
-    <p style="color:blueviolet">
-        This is some text in the paragraph
-    </p>
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+        </section>
+    </div>
 
-    <p><input type="text" /></p>
-
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
 
 </body>
 
