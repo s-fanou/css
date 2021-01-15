@@ -1,4 +1,4 @@
-@import "reset";
+@import 'reset.css';
 
 /* for this to work i must first compile scss */
 ol {
