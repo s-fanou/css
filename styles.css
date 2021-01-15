@@ -1,6 +1,6 @@
-@import "reset";
+@import "reset.scss";
 
-body {
+ol {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
   color: red;
