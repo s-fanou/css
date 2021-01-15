@@ -1,5 +1,6 @@
-@import "reset.css";
+@import "reset";
 
+/* for this to work i must first compile scss */
 ol {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
