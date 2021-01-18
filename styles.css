@@ -1,5 +1,9 @@
 @import "reset.css";
 
+body{
+  background-color: orange;
+}
+
 ol {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
