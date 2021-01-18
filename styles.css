@@ -1,11 +1,14 @@
 @import "reset.css";
 
-body{
-  background-color: orange;
+.div-basic{
+  border: 2px;
+  color:blueviolet;
 }
 
-ol {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  color: red;
+.div-extend{
+
+  background-color: aquamarine;
+
 }
+
+
