@@ -6,9 +6,15 @@
 }
 
 .div-extend{
-
   background-color: aquamarine;
+}
 
+p{
+  color: chartreuse;
+}
+/* It allows me to define p twice !!! */
+p{
+  background-color: beige;
 }
 
 
