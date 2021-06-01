@@ -1,7 +1,6 @@
-p {
-    color:blue;
-}
 
-.font-color-navy { 
-  color:navy
-}
+.your-class-name {
+  width:45%;
+  background:rgb(15, 98, 223);
+  float:right; 
+  } 
