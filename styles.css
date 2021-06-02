@@ -2,5 +2,6 @@
 .your-class-name {
   /* A div with no content inside does not show on the screen even if it has a background color */
   background:rgb(15, 98, 223);
+  color: white;
 
   } 
