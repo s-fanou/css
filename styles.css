@@ -3,5 +3,10 @@
   /* A div with no content inside does not show on the screen even if it has a background color */
   background:rgb(15, 98, 223);
   color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  margin-top: 50px;
+  border: 10px solid rgb(183, 9, 226);
 
   } 
