@@ -1,6 +1,6 @@
 
 .your-class-name {
-  /* If I do not put a width e.g. width: 75% the div takes the width of the whole screen */
+  /* A div with no content inside does not show on the screen even if it has a background color */
   background:rgb(15, 98, 223);
 
   } 
