@@ -19,13 +19,16 @@
             inherits the color from its parent the div. Yes it does.
         </p>
 
-        <span> This is text in a span. It also inherits the styling of the div
-            <p>This is a paragraph within the div and the > span, 2 levels inside where the style is applied
-                yet it still inherits the style.
+        <span> This is text in a span. It also inherits the color of the div
+            <p>This is a paragraph within the div and the span, 
+                2 levels inside yet it still inherits the color style but only the color not the rest of the styles.
             </p>
         </span>
 
-        <div>THIS IS A DIV WITHIN A DIV</div>
+        <div>THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest of the styles. 
+            For example it does not inherit margin and padding from the above div. 
+            So it seems that only certain styles are inherited from the parent. 
+        </div>
 
     </div>
 
