@@ -10,3 +10,11 @@
   border: 10px solid rgb(183, 9, 226);
 
   } 
+
+  span[title="sotiris span"]{
+    color:black;
+  }
+
+  a[title] {
+    color: rgb(238, 241, 28);
+  }
