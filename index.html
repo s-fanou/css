@@ -8,13 +8,22 @@
     <title>Sot Div float</title>
 </head>
 
-<body>
+<body class="your-class-name">
 
-    <div class="your-class-name">
+    <div>
         This is a line of text. <br>
         The length or height of a div is as big as the content it contains <br>
-        As I put put more lines of text the height becomes bigger to accomodate. <br>
+        As I put more lines of text the height becomes bigger to accomodate. <br>
+
+        <p>This is a paragraph I have not put any styling on, just want to see if it 
+            inherits the color from its parent the div. Yes it does.
+        </p> 
         
+        <span> This is text in a span. It also inherits the styling of the div 
+            <p>This is a paragraph within the div and the > span, 2 levels inside where the style is applied 
+                yet it still inherits the style.
+            </p>
+        </span>
 
     </div>
 
