@@ -11,21 +11,11 @@
 <body>
 
     <div class="your-class-name">
-        This is a line of text. <br>
-        The length or height of a div is as big as the content it contains <br>
-        As I put more lines of text the height becomes bigger to accomodate. <br>
+        <p>This is a line of text.
+        The length or height of a div is as big as the content it contains
+        As I put more lines of text the height becomes bigger to accomodate.</p>  
 
-        <p>This is a paragraph I have not put any styling on, just want to see if it
-            inherits the color from its parent the div. Yes it does.
-        </p>
-
-        <span> This is text in a span. It also inherits the color of the div
-            <p>This is a paragraph within the div and the span, 
-                2 levels inside yet it still inherits the color style but only the color not the rest of the styles.
-            </p>
-        </span>
-
-        <div style="width: 200px; height: fit-content;">THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest of the styles. 
+        <div id="my-div">THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest of the styles. 
             For example it does not inherit margin and padding from the above div. 
             So it seems that only certain styles are inherited from the parent. 
         </div>
