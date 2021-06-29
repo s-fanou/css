@@ -5,21 +5,49 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <title>Sot Div float</title>
+    <title>Sot exp</title>
+
+    <style>
+        div.fixed-bottom {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+
+        div.fixed-top {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+    </style>
 </head>
 
-<body>
+<body style="padding: 30px;">
 
     <div class="your-class-name">
         <p>This is a line of text.
-        The length or height of a div is as big as the content it contains
-        As I put more lines of text the height becomes bigger to accomodate.</p>  
+            The length or height of a div is as big as the content it contains
+            As I put more lines of text the height becomes bigger to accomodate.</p>
 
-        <div id="my-div">THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest of the styles. 
-            For example it does not inherit margin and padding from the above div. 
-            So it seems that only certain styles are inherited from the parent. 
+        <div id="my-div">THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest of
+            the styles.
+            For example it does not inherit margin and padding from the above div.
+            So it seems that only certain styles are inherited from the parent.
         </div>
 
+    </div>
+
+
+    <div class="fixed-top">
+        This div element has position: fixed; It seems that position fixed ignores any body padding. 
+    </div>
+
+    <div class="fixed-bottom">
+        This div element has position: fixed;
     </div>
 
 
