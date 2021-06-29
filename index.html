@@ -1,55 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <title>Sot exp</title>
-
     <style>
-        div.fixed-bottom {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            width: 300px;
+        div.relative {
+            /* sets position relative but does not set top bottom etc. he just wants it not to be static
+            */
+            position: relative;
+            width: 400px;
+            height: 200px;
             border: 3px solid #73AD21;
         }
 
-        div.fixed-top {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 300px;
+        div.absolute {
+            position: absolute;
+            /* absolute position is relative to its positioned ancestor in this case relative to the first div
+            which contains the 2nd div. top: 100px means 100px away from the top of the ancestor, div 1 */
+            top: 100px;
+            right: 0;
+            width: 200px;
+            height: 100px;
             border: 3px solid #73AD21;
         }
     </style>
 </head>
 
-<body style="padding: 30px;">
+<body>
 
-    <div class="your-class-name">
-        <p>This is a line of text.
-            The length or height of a div is as big as the content it contains
-            As I put more lines of text the height becomes bigger to accomodate.</p>
+    <h2>position: absolute;</h2>
 
-        <div id="my-div">THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest of
-            the styles.
-            For example it does not inherit margin and padding from the above div.
-            So it seems that only certain styles are inherited from the parent.
-        </div>
+    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+        positioned relative to the viewport, like fixed):</p>
 
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
     </div>
-
-
-    <div class="fixed-top">
-        This div element has position: fixed; It seems that position fixed ignores any body padding. 
-    </div>
-
-    <div class="fixed-bottom">
-        This div element has position: fixed;
-    </div>
-
 
 </body>
 
