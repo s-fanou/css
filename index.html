@@ -3,7 +3,7 @@
 <head>
     <style>
         div.relative {
-            /* sets position relative but does not set top bottom etc. he just wants it not to be static
+            /* sets position relative but does not set top bottom etc. he just wants it not to be position static
             */
             position: relative;
             width: 400px;
@@ -18,8 +18,13 @@
             top: 100px;
             right: 0;
             width: 200px;
-            height: 100px;
-            border: 3px solid #73AD21;
+            height: 90px;
+            border: 3px solid #0350f7;
+            /* padding: 20px; */
+            margin-top: 20px;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: 5px;
         }
     </style>
 </head>
@@ -32,7 +37,12 @@
         positioned relative to the viewport, like fixed):</p>
 
     <div class="relative">This div element has position: relative;
-        <div class="absolute">This div element has position: absolute;</div>
+        <div class="absolute">This div element has position: absolute;
+            It is 90 pixels high but I wonder what will happen if we add more text in it that this height can
+            accomodate.
+            This is extra test for testing the height, what happens to the height, does the text overflow both divs
+            for example? Yes it does, overflow both divs.
+        </div>
     </div>
 
 </body>
