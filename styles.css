@@ -1,6 +1,27 @@
 #main-div {
   border: 2px solid rgb(17, 17, 17);
-  background-color: grey;
-  padding: 30px;
-  
+  background-color: rgb(231, 224, 224);
+  padding: 30px; 
+  border-radius: 5px; 
+}
+
+#main-div > div {
+
+  border: 2px solid grey;
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px; 
+}
+
+input[type=text], select {
+  width: 100%;
+  border-radius: 4px;
+
+}
+
+input[type=submit] {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 70px;
+
 }
