@@ -1,6 +1,6 @@
 #main-div {
   border: 2px solid rgb(17, 17, 17);
-  background-color: rgb(231, 224, 224);
+  background-color: rgb(192, 186, 186);
   padding: 30px; 
   border-radius: 5px; 
 }
@@ -8,6 +8,7 @@
 #main-div > div {
 
   border: 2px solid grey;
+  background-color: rgb(226, 219, 219);
   width: 50%;
   padding: 20px;
   border-radius: 5px; 
@@ -15,13 +16,28 @@
 
 input[type=text], select {
   width: 100%;
+  border: 1px solid blueviolet;
   border-radius: 4px;
+  margin: 8px 0;
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
 
 }
 
 input[type=submit] {
   width: 100%;
+  border: 2px solid blueviolet;
   border-radius: 4px;
+  background-color: blueviolet;
+  color:white;
   margin-top: 70px;
+  padding: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  border: 2px solid rgb(53, 2, 83);
 
 }
