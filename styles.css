@@ -16,6 +16,7 @@
 
 input[type=text], select {
   width: 100%;
+  color: grey;
   border: 1px solid blueviolet;
   border-radius: 4px;
   margin: 8px 0;
