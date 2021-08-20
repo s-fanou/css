@@ -1,7 +1,6 @@
-p {
-    color:blue;
-}
-
-.font-color-navy { 
-  color:navy
+#main-div {
+  border: 2px solid rgb(17, 17, 17);
+  background-color: grey;
+  padding: 30px;
+  
 }
