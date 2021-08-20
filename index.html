@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
     <style>
-        p {
-            color: brown
+        .div1 {
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid blue;
+ 
+        }
+
+        .div2 {
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
         }
     </style>
-
-    <title>Sot Test CSS</title>
 </head>
 
 <body>
 
-    <label class="font-color-navy"><strong>Label text here</strong></label>
-
-    <p style="color:blueviolet">
-        This is some text in the paragraph
-    </p>
-
-    <p><input type="text" /></p>
-
+    <div class="div1">Both divs have the same properties except the second div has box-sizing set to border-box</div>
+    <br>
+    <div class="div2">Both divs have the same properties except THIS div has box-sizing set to border-box</div>
 
 </body>
 
