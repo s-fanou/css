@@ -10,10 +10,25 @@
 
 <body>
 
-    <div style="border: solid 2px red; width: 600px; height: 500px; ">
+    <div style=" border: solid 2px red; width: 600px; height: 500px;">
 
-        <div style="width: 200px; height: 300px; border: 2px solid blue; padding: 5px; margin-left: auto; margin-right: auto;">
-            THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest of the styles.
+        <div
+            style="margin-left: auto; margin-right: auto; border: 2px solid rgb(27, 236, 8); width: 300px;  height: 250px; ">
+
+            <div style="display:table; border: 2px solid rgb(7, 238, 219);">
+
+                <div style="display: table-row; ">
+
+                    <div style="display:table-cell; border: 2px solid blue; padding: 10px; vertical-align: middle;">
+                        <p> THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest
+                            of
+                            the
+                            styles.</p>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
