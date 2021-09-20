@@ -10,25 +10,21 @@
 
 <body>
     <!-- regular div -->
-    <div style=" border: solid 4px red; width: 600px; height: 500px;">
-
-           
-
-                <!-- table cell, vertical-align middle -->
-                <div
-                    style="display:table-cell; width: 400px;  height: 250px; border: 4px solid rgb(48, 248, 8); padding: 10px; vertical-align: middle;">
-
-                    <!-- inline-block -->
-                    <div style="display: inline-block;"> THIS IS A DIV WITHIN A DIV. It inherits the color style from
-                        the div above but NOT the rest
-                        of
-                        the
-                        styles.
-                    </div>
-
-                </div>
+    <div style="display: flex;  justify-content: center; align-items: center; width: 600px; height: 500px; border: solid 4px red;">
 
 
+        <!-- 2nd regular div, flex item  -->
+        <div style="width: 400px;  height: 250px; border: 4px solid rgb(48, 248, 8);">
+
+            <!-- inline-block -->
+            <div style="display: inline-block;"> THIS IS A DIV WITHIN A DIV. It inherits the color style from
+                the div above but NOT the rest
+                of
+                the
+                styles.
+            </div>
+
+        </div>
 
 
 
