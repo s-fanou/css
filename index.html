@@ -16,13 +16,26 @@
 
 <body>
 
-    <label class="font-color-navy"><strong>Label text here</strong></label>
+    The below are positioned:
 
-    <p style="color:blueviolet">
-        This is some text in the paragraph
-    </p>
+    <div style="border: solid 2px brown; position: absolute; top: 0; width:200px; height:100px;">
+        This is text in the first div
+        <div style="border: solid 2px black; position: absolute; top: 0; width:150px; height:50px;">Text in the internal div</div>
+    </div>
+    <div style="border: solid 2px blue; position: absolute; top: 0;  width:200px; height:100px;">
+        This is some text in the second div
+    </div>
 
-    <p><input type="text" /></p>
+    These are not positioned: <br>
+
+
+    <div style="border: solid 2px brown; width:200px; height:100px;">
+        This is text in the first div
+        <div style="border: solid 2px black; width:150px; height:50px;">Text in the internal div</div>
+    </div>
+    <div style="border: solid 2px blue; position: absolute; top: 0;  width:200px; height:100px;">
+        This is some text in the second div
+    </div>
 
 
 </body>
