@@ -3,11 +3,69 @@
 
 <head>
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
 
     <style>
-        p {
-            color: brown
+        html {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .app-grid-fullscreen {
+            display: grid;
+            grid-template-areas:
+                "logo header header header header header"
+                "sidebar main main main main main"
+                "sidebar main main main main main"
+                "sidebar main main main main main"
+                "sidebar main main main main main"
+                "footer footer footer footer footer footer";
+            grid-gap: 1px;
+        }
+
+        @media only screen and (max-width: 640px) {
+            .app-grid-fullscreen {
+                display: grid;
+                grid-template-areas:
+                    "logo"
+                    "header"
+                    "sidebar"
+                    "sidebar"
+                    "main"
+                    "main"
+                    "footer";
+                grid-gap: 1px;
+            }
+        }
+
+        .in-logo {
+            grid-area: logo;
+        }
+
+        .in-header {
+            grid-area: header;
+        }
+
+        .in-sidebar {
+            grid-area: sidebar;
+        }
+
+        .in-main {
+            grid-area: main;
+        }
+
+        .in-footer {
+            grid-area: footer;
         }
     </style>
 
@@ -16,13 +74,15 @@
 
 <body>
 
-    <label class="font-color-navy"><strong>Label text here</strong></label>
 
-    <p style="color:blueviolet">
-        This is some text in the paragraph
-    </p>
+    <div class="app-grid-fullscreen">
+        <div id="the-logo" class="in-logo"> THE LOGO </div>
+        <div id="the-side-bar" class="in-sidebar">SIDE BAR</div>
+        <div id="the-header" class="in-header">HEADER</div>
+        <div id="main" class="in-main">MAIN</div>
+        <div id="the-footer" class="in-footer">FOOTER</div>
+    </div>
 
-    <p><input type="text" /></p>
 
 
 </body>

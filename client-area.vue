@@ -1,5 +1,5 @@
 <template>
-  <div class="app-grid-fullscreen bg-gradient-to-t from-indigo-300 to-indigo-100">
+  <div class="app-grid-fullscreen">
     <the-logo class="in-logo"></the-logo>
     <the-side-bar class="in-sidebar"></the-side-bar>
     <the-header class="in-header"></the-header>
