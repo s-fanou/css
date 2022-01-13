@@ -15,14 +15,32 @@
 </head>
 
 <body>
+    <div style="width: 800px; background-color: azure;">
+        <div style="width: 200px; height: 100px; background-color: blue;">Some text</div>
+        <div style="width: 200px; height: 100px; background-color: blueviolet;">Some text</div>
+        <span style="display: inline; background-color: beige;">
+            Even though there is room the span does not stay next to div
+        </span>
+        <div style="width: 200px; height: 100px; background-color:bisque;">
+            because a div always takes the whole line, even though it has short width
+        </div>
+        <div style="width: 200px; height: 100px; background-color:chartreuse; display:inline-block">One way to make two
+            elements sit next to each other is to make
+            them display: inline-block</div>
+        <div style="width: 200px; height: 100px; background-color:cornflowerblue;display:inline-block"> but inline-block
+            will force a space between boxes.</div>
+        <div>------------------------------</div>
+        <div style="width: 200px; height: 100px; background-color:chocolate; float:left">Another way to make two
+            elements
+            sit next
+            to each other is to make both of them float left </div>
+        <div style="width: 200px; height: 100px; background-color:brown;float:left">but notice how they come out of the
+            parent div</div>
+    </div>
 
-    <label class="font-color-navy"><strong>Label text here</strong></label>
 
-    <p style="color:blueviolet">
-        This is some text in the paragraph
-    </p>
 
-    <p><input type="text" /></p>
+
 
 
 </body>
