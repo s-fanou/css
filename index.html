@@ -6,6 +6,11 @@
     <title>Sot overflow exp</title>
 
     <style>
+        .parent-div {
+            background: rgb(255, 145, 0);
+            padding: 50px;
+        }
+
         .your-class-name {
             /* A div with no content inside does not show on the screen even if it has a background color */
             background: rgb(196, 204, 204);
@@ -33,13 +38,20 @@
 
 <body style="padding: 30px;">
 
-    <div class="your-class-name">
-        <p><B>WITH OVERFLOW SCROLL SCROLL BARS ARE CREATED.</B></p>
+    <div class="parent-div">
 
-        <div id="my-div">THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest of
-            the styles.
-            For example it does not inherit margin and padding from the above div.
-            So it seems that only certain styles are inherited from the parent.
+        <p><b> RELATES TO THE DIV WHICH CONTAINS THE STYLE oveflow AND WHAT IS INSIDE IT. Parent divs are not
+                affected</b></p>
+
+        <div class="your-class-name">
+            <p><B>WITH OVERFLOW SCROLL SCROLL BARS ARE CREATED.</B></p>
+
+            <div id="my-div">THIS IS A DIV WITHIN A DIV. It inherits the color style from the div above but NOT the rest
+                of
+                the styles.
+                For example it does not inherit margin and padding from the above div.
+                So it seems that only certain styles are inherited from the parent.
+            </div>
         </div>
 
     </div>
